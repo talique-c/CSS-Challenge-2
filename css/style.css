@@ -1,0 +1,87 @@
+/*CONTAINER*/
+
+/*CLASS SELECTOR (1) */
+.wrapper {
+    background: radial-gradient(circle, rgba(198,157,241,1) 0%, rgba(118,71,140,1) 100%);
+    width: 80vw;
+    margin: 0 auto;
+    border: 8px whitesmoke ridge;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    width: 90%;
+    text-align: center;
+    background-color: #ddbced;
+}
+
+/*TEXT*/
+
+/*Descendant Selector (2) */
+main p::first-letter {
+    color: purple;
+    font-size: 30px;
+}
+
+/*ID Selector (3) */
+#name {
+    text-shadow: white 2px 3px;
+}
+
+/*GROUPING SELECTOR (4) */
+h1,
+h2,
+h3,
+ul,
+footer {
+    color: black;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-family: 'Gill Sans MT', sans-serif;
+}
+
+h1 {
+    width: 80vw;
+    background-color: #ddbced;
+}
+
+p {
+    font-family: 'Gill Sans MT', sans-serif;
+}
+
+p + h3 {
+    font-family: 'Gill Sans MT', sans-serif;
+    text-decoration: underline;
+}
+footer > p {
+    font-family: 'Gill Sans MT', sans-serif;
+}
+
+/*IMAGE*/
+img {
+    width: 30vw;
+    height: auto;
+    max-width: 100%;
+    border: 2px solid black;
+}
+
+img:hover {
+    filter: drop-shadow(4px 4px 2px black) contrast(130%);
+}
+
+/*LIST*/
+
+/* Direct Child Selector (5) */
+ul > li {
+    font-family: 'Gill Sans MT', sans-serif;
+    list-style-type: none;
+}
+
+/* Pseudo class selector (6) */
+li:nth-child(odd) {
+    font-weight: bold;
+}
